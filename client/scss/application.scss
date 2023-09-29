@@ -1,0 +1,254 @@
+$google-font-mooli: 'Mooli', sans-seriff;
+$google-font-oswald: 'Oswald', sans-seriff;
+$google-font-cabin: 'Cabin', sans-seriff;
+$google-font-montserrat: 'Montserrat', sans-seriff;
+
+$bookCard-white: rgba(245, 245, 245, 0.859);
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../assets/library-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.app-header {
+    background-color: #7431f97d;
+    justify-content: center;
+    min-height: 5vh;
+    box-shadow: 0 0 2rem rgb(0 0 0 / .1);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    
+}
+
+.app-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 5vh;
+    width: 100vw;
+    background-color: rgba(212, 196, 196, 0.71);
+}
+
+.bookCard, .add-book-card {
+    min-height: 150px;
+    max-height: auto;
+    width: auto;
+    background-color: $bookCard-white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: $google-font-oswald;
+    font-size: 1rem;
+}
+
+.add-book-card {
+    padding-bottom: 6rem;
+}
+
+.add-book-card button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 2.3rem;
+    background-color: transparent;
+}
+
+.add-book-span {
+    text-decoration: underline;
+    font-family: $google-font-oswald;
+}
+
+.add-book-plus {
+    font-size: 3rem;
+}
+
+.bookCard p {
+    width: auto;
+    
+}
+
+.bookCardContainer {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Adjust the minmax values as needed */
+    gap: 1.1em;
+    margin-bottom: 20rem;
+    margin-top: 5rem;
+}
+
+.bookCard-btn-container {
+    margin-bottom: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    width: 20rem;
+}
+
+.delete-book-btn, .update-book-btn {
+    padding: .3rem 1.6rem;
+    border-radius: 6px;
+    color: white;
+}
+
+.delete-book-btn {
+    background-color: palevioletred;
+
+}
+
+.update-book-btn {
+    background-color: lightseagreen;
+    // background-color: lightsalmon;
+}
+
+.navbar, .footer-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+}
+
+.header-title {
+    font-family: $google-font-mooli;
+    color: white;
+    font-size: 3rem;
+    margin: 25px 0;
+}
+
+.nav-list {
+    padding-left: 0;
+}
+
+.nav-list-right li, .footer-lists li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 0;
+}
+.username {
+    font-family: $google-font-cabin;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.nav-list-left li {
+    color: white;
+    list-style: none;
+}
+
+.link {
+    color: white;
+}
+
+.title {
+    font-size: 2.3rem;
+    text-decoration: underline;
+    margin: 0 0 1.5rem 0;
+    height: auto;
+    overflow: visible;
+    text-align: center;
+}
+
+.author {
+    font-size: 1.7rem;
+    margin: 0 0 1.2rem 0;
+}
+
+.finished, .totalPageCount, .rating {
+    font-size: 1.1rem;
+}
+
+.totalPageCount, .finished {
+    margin-bottom: 0;
+}
+
+.footer-lists {
+    padding: 0;
+}
+
+.footer-middle {
+    font-family: $google-font-montserrat;
+}
+
+.github-link {
+    text-decoration: none;
+    color: black;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
+
+// -------------------------------------------
+
+// .form-btn-container {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     height: 23rem;
+//     width: 25rem;
+//     background-color: $bookCard-white;
+// }
+
+
+
+.update-form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 24rem;
+    width: 29rem;
+    background-color: $bookCard-white;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+input {
+    width: 16rem;
+}
+
+label {
+margin-bottom: 5px;
+font-weight: bold;
+}
+  
+input {
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+  
+.form-submission-btn {
+background-color: #007bff;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 4px;
+cursor: pointer;
+}
