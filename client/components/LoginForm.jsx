@@ -84,7 +84,7 @@ const LoginForm = (props) => {
         <div className="form-group password-form-group">
           <label htmlFor="password" className="login-password-label">
             Password:
-            <input type="text" className="login-password-input" name="password" onChange={handleChange}/>
+            <input type="password" className="login-password-input" name="password" onChange={handleChange}/>
           </label>
         </div>
         <div className="form-group btns-form-group">

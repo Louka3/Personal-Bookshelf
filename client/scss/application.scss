@@ -226,6 +226,7 @@ body {
     height: 24rem;
     width: 29rem;
     background-color: $bookCard-white;
+    border: solid black 1px;
 }
 
 .form-group {
@@ -266,6 +267,7 @@ cursor: pointer;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: black solid 1px;
 }
 
 .username-form-group {
