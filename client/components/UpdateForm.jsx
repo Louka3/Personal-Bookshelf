@@ -11,10 +11,10 @@ const UpdateForm = (props) => {
     finished: undefined,
     rating: undefined,
   });
-
+  
   const navigate = useNavigate();
   const { _id } = useParams();
-
+  
   const handleBtnClick = () => {
     const { title, author, totalPageCount, finished, rating } = formData;
   
@@ -38,7 +38,8 @@ const UpdateForm = (props) => {
     })
       .then((response) => response.json())
       .then((responseData) => {
-        navigate(`/`);
+        
+        navigate('/home');
       })
       .catch((error) => {
         console.error('Error:', error);

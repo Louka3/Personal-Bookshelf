@@ -7,7 +7,7 @@ const Navbar = (props) => {
     return (
     <nav className="navbar">
       <ul className="nav-list nav-list-left">
-        <li className="username">Louka</li>
+        <li className="username">{props.username}</li>
       </ul>
       <p className="header-title">Personal Bookshelf</p>
       <ul className="nav-list nav-list-right">

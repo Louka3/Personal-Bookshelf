@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import {useParams} from "react-router-dom";
 import Bookcard from './Bookcard.jsx';
 import AddBookCard from './AddBookCard.jsx';
 
 const Home = (props) => {
+  // const data = useParams();
+  // console.log('data', data)
   const [listOfBooks, setListOfBooks] = useState([]); // Use state to manage the list of books
-  const [userId, setUserId] = useState("650e669a6fc15fbec77bb705");
+  const [userId, setUserId] = useState(props._id);//decodeURIComponent(data._id)
+  // const [userId, setUserId] = useState("650e669a6fc15fbec77bb705");
 
   useEffect(() => {
     fetch(`/api/${userId}`, {

@@ -4,7 +4,7 @@ $google-font-cabin: 'Cabin', sans-seriff;
 $google-font-montserrat: 'Montserrat', sans-seriff;
 
 $bookCard-white: rgba(245, 245, 245, 0.859);
-
+$header-purple: #7431f97d;
 
 body {
     margin: 0;
@@ -25,7 +25,7 @@ body {
 }
 
 .app-header {
-    background-color: #7431f97d;
+    background-color: $header-purple;
     justify-content: center;
     min-height: 5vh;
     box-shadow: 0 0 2rem rgb(0 0 0 / .1);
@@ -71,7 +71,7 @@ body {
     height: 100%;
     width: 100%;
     border: none;
-    font-size: 2.3rem;
+    font-size: 2rem;
     background-color: transparent;
 }
 
@@ -149,11 +149,16 @@ body {
     font-family: $google-font-cabin;
     color: white;
     font-size: 1.4rem;
+    width: 12rem;
 }
 
 .nav-list-left li {
     color: white;
     list-style: none;
+}
+
+.nav-list {
+    font-family: $google-font-cabin;
 }
 
 .link {
@@ -251,4 +256,52 @@ border: none;
 padding: 10px 20px;
 border-radius: 4px;
 cursor: pointer;
+}
+
+.login-container {
+    height: 14rem;
+    width: 25rem;
+    background-color: $bookCard-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.username-form-group {
+    margin-bottom: 1rem;
+}
+
+.password-form-group {
+    margin-bottom: 2rem;
+}
+
+.btns-form-group {
+    justify-content: space-evenly;
+}
+
+.btns-form-group button {
+    width: 6rem;
+    height: 1.7rem;
+    font-size: 1rem;
+}
+
+.signup-btn {
+    background-color: #7430fcae;
+    color: white;
+
+}
+
+.signup-btn:hover {
+    
+    background-color: #6d28f9da;
+}
+
+.login-btn {
+    background-color: white;
+    color: #7431f9be;
+}
+
+.login-btn:hover {
+    background-color: #c6aafd74;
 }

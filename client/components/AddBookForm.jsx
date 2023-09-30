@@ -34,7 +34,7 @@ const AddBookForm = (props) => {
       },
       body: JSON.stringify(dataToSend),
     })
-      .then((response) => navigate(`/`))
+      .then((response) => navigate(`/home`))
       .catch((error) => {
         console.error('Error:', error);
       });

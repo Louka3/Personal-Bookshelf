@@ -1,20 +1,9 @@
-// const fs = require('fs/promises');
-// const fsCallback = require('fs');
-// these I believe are specifically for when searching for data from another file
-// not sure if they're needed yet
-
-// const {response} = require('../server');
-// const {create} = require('domain');
-// not sure if these are needed yet. They were in the unit but I did not use them
-
 
 const path = require('path');
 const mongoose = require('mongoose');
 
 const models = require('../models/bookModels');
 
-// helper function to create dataController error objects
-// return value will be the object we pass into next, invoking global error handler
 const createErr = (errInfo) => {
   const { method, type, err } = errInfo;
   return { 

@@ -4,7 +4,7 @@ import Navbar from "./Navbar.jsx";
 const Header = (props) => {
     return (
         <header className="app-header">
-            <Navbar /> 
+            <Navbar username={props.username} setUsername={props.setUsername}/> 
         </header>
     )
 }
