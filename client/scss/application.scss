@@ -4,6 +4,7 @@ $google-font-cabin: 'Cabin', sans-seriff;
 $google-font-montserrat: 'Montserrat', sans-seriff;
 
 $bookCard-white: rgba(245, 245, 245, 0.859);
+// $header-purple: #7431f9c2;
 $header-purple: #7431f97d;
 
 body {
@@ -148,8 +149,9 @@ body {
 .username {
     font-family: $google-font-cabin;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     width: 12rem;
+    text-decoration: underline;
 }
 
 .nav-list-left li {
@@ -163,6 +165,11 @@ body {
 
 .link {
     color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
 }
 
 .title {
@@ -203,18 +210,6 @@ body {
 .github-link:hover {
     text-decoration: underline;
 }
-
-// -------------------------------------------
-
-// .form-btn-container {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     height: 23rem;
-//     width: 25rem;
-//     background-color: $bookCard-white;
-// }
 
 
 
@@ -306,4 +301,8 @@ cursor: pointer;
 
 .login-btn:hover {
     background-color: #c6aafd74;
+}
+
+.add-book-card button {
+    height: 100%;
 }

@@ -15,7 +15,7 @@ const App = () => {
     const [_id, set_id] = useState("")
     return(
     <div className="App">
-        <Header username={username} />
+        <Header username={username} setUsername={setUsername}/>
             <Routes>
                 <Route path="/home" element={<Home _id={_id}/>}></Route>
                 <Route path="/updateForm/:_id" element={<UpdateForm />}></Route>
